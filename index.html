@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="logo mono">rendi</div>
+        <img src="images/logo.png" alt="Rendi logo" class="logo">
         <nav>
             <ul>
                 <li><a href="#">MENU</a></li>
@@ -23,15 +23,18 @@
     </header>
 
     <section class="hero">
-        <h1>Tee tilaa elämälle, älä tavaroille.</h1>
-        <div class="cta-buttons">
-            <a href="#" class="btn btn-primary">JÄTÄ ILMOITUS</a>
-            <a href="#" class="btn btn-secondary">HAE VÄLINEITÄ</a>
+        <div class="hero-overlay">
+            <h1>Tee tilaa elämälle, älä tavaroille.</h1>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">JÄTÄ ILMOITUS</a>
+                <a href="#" class="btn btn-secondary">HAE VÄLINEITÄ</a>
+            </div>
         </div>
     </section>
 
     <section class="search-section">
         <input type="text" class="search-bar" placeholder="Hakusana...">
+        <h3>Tuotekategoriat</h3>
         <div class="filters">
             <div class="filter-item">Jääkiekko</div>
             <div class="filter-item">Luistelu</div>
@@ -47,21 +50,30 @@
     </section>
 
     <section class="what-is-rendi">
-        <h2>Mikä on Rendi?</h2>
-        <div class="description">
-            <p>Rendi on helppo ja ekologinen tapa harrastaa ilman omistamisen vaivaa. Vuokraa välineet silloin kun tarvitset – ja anna omiesi kiertää eteenpäin.</p>
+        <div class="container">
+            <div class="left-image">
+                <img src="images/jalkapallo-maali.jpg" alt="Jalkapallomaalivahti" class="round-image">
+            </div>
+            <div class="right-content">
+                <h2>Mikä on Rendi?</h2>
+                <p>Rendi on helppo ja ekologinen tapa harrastaa ilman omistamisen vaivaa. Vuokraa välineet silloin kun tarvitset – ja anna omiesi kiertää eteenpäin.</p>
+            </div>
         </div>
         <div class="benefits">
             <div class="benefit">
+                <img src="images/helppo-icon.png" alt="Helppo" class="benefit-icon">
                 <h3>HELPPPO</h3>
             </div>
             <div class="benefit">
+                <img src="images/ekologinen-icon.png" alt="Ekologinen" class="benefit-icon">
                 <h3>EKOLOGINEN</h3>
             </div>
             <div class="benefit">
+                <img src="images/turvallinen-icon.png" alt="Turvallinen" class="benefit-icon">
                 <h3>TURVALLINEN</h3>
             </div>
             <div class="benefit">
+                <img src="images/yhteisollinen-icon.png" alt="Yhteisöllinen" class="benefit-icon">
                 <h3>YHTEISÖLLINEN</h3>
             </div>
         </div>
@@ -74,45 +86,50 @@
             <li>Vuokraa turvallisesti sovelluksen kautta</li>
             <li>Käytä ja palauta – väline kiertää seuraavalle!</li>
         </ol>
+        <div class="user-image-section">
+            <img src="images/mies-sohva.jpg" alt="Mies sovelluksella" class="round-user-image">
+        </div>
         <div class="search-grid">
             <div class="search-item">
-                <img src="images/jaakiekko-pelaaja.jpg" alt="Jääkiekko" onerror="this.src='https://via.placeholder.com/200x150?text=Jääkiekko'">
+                <img src="images/jaakiekko.jpg" alt="Jääkiekko" onerror="this.src='https://via.placeholder.com/200x150?text=Jääkiekko'">
                 <p>Jääkiekko</p>
             </div>
             <div class="search-item">
-                <img src="images/luistelu-luistimet.jpg" alt="Luistelu" onerror="this.src='https://via.placeholder.com/200x150?text=Luistelu'">
+                <img src="images/luistelu.jpg" alt="Luistelu" onerror="this.src='https://via.placeholder.com/200x150?text=Luistelu'">
                 <p>Luistelu</p>
             </div>
             <div class="search-item">
-                <img src="images/tennis-pallo.jpg" alt="Tennis" onerror="this.src='https://via.placeholder.com/200x150?text=Tennis'">
-                <p>Tennis</p>
-            </div>
-            <div class="search-item">
-                <img src="images/laskettelu-nainen.jpg" alt="Laskettelu" onerror="this.src='https://via.placeholder.com/200x150?text=Laskettelu'">
+                <img src="images/laskettelu.jpg" alt="Laskettelu" onerror="this.src='https://via.placeholder.com/200x150?text=Laskettelu'">
                 <p>Laskettelu</p>
             </div>
             <div class="search-item">
-                <img src="images/koripallo-dunkki.jpg" alt="Koripallo" onerror="this.src='https://via.placeholder.com/200x150?text=Koripallo'">
+                <img src="images/tennis.jpg" alt="Tennis" onerror="this.src='https://via.placeholder.com/200x150?text=Tennis'">
+                <p>Tennis</p>
+            </div>
+            <div class="search-item">
+                <img src="images/koripallo.jpg" alt="Koripallo" onerror="this.src='https://via.placeholder.com/200x150?text=Koripallo'">
                 <p>Koripallo</p>
             </div>
             <div class="search-item">
-                <img src="images/jalkapallo-placeholder.jpg" alt="Jalkapallo" onerror="this.src='https://via.placeholder.com/200x150?text=Jalkapallo'">
+                <img src="images/jalkapallo.jpg" alt="Jalkapallo" onerror="this.src='https://via.placeholder.com/200x150?text=Jalkapallo'">
                 <p>Jalkapallo</p>
             </div>
         </div>
-        <div style="text-align: center; margin-top: 2rem;">
+        <div class="cta-center">
             <a href="#" class="btn btn-primary">KATSO KAIKKI</a>
         </div>
     </section>
 
     <section class="why-choose">
-        <h2>Miksi valita Rendi?</h2>
-        <ul>
-            <li>• Turvallinen ja vakuutettu vuokraus</li>
-            <li>• Käyttäjäarvostelut ja luotettavuus</li>
-            <li>• Ekologinen valinta</li>
-            <li>• Nopea ja helppo käyttöliittymä</li>
-        </ul>
+        <div class="why-box">
+            <h2>Miksi valita Rendi?</h2>
+            <ul>
+                <li>• Turvallinen ja vakuutettu vuokraus</li>
+                <li>• Käyttäjäarvostelut ja luotettavuus</li>
+                <li>• Ekologinen valinta</li>
+                <li>• Nopea ja helppo käyttöliittymä</li>
+            </ul>
+        </div>
     </section>
 
     <section class="cta-section">
@@ -121,8 +138,10 @@
             <a href="#" class="btn btn-primary">Hae välineitä</a>
             <a href="#" class="btn btn-secondary">Liity beta-testaukseen</a>
         </div>
-        <p>Lataa sovellus / liity yhteisöön / CTA</p>
-        <p>Linkit someen tai uutiskirjeeseen</p>
+        <div class="cta-links">
+            <p>Lataa sovellus / liity yhteisöön / CTA</p>
+            <p>Linkit someen tai uutiskirjeeseen</p>
+        </div>
     </section>
 
     <section class="social-proof">
@@ -130,11 +149,11 @@
             “Vuokrasimme lasten luistimet RENDIstä – toimi loistavasti!”<br>
             — Laura, 35
         </blockquote>
-        <p> Tällä luodaan luottamusta ja inhimillisyyttä.</p>
+        <p>👉 Tällä luodaan luottamusta ja inhimillisyyttä.</p>
     </section>
 
     <footer>
-        <div class="logo mono">rendi</div>
+        <img src="images/logo.png" alt="Rendi logo" class="logo-small">
         <div class="footer-links">
             <a href="#">Tietosuoja ja rekisteriseloste</a>
             <a href="#">Yhteystiedot</a>
