@@ -9,9 +9,6 @@ h1, h2, h3 {
     font-weight: 900;
     font-family: 'Mulish', sans-serif;
 }
-.mono {
-    font-family: 'SUSE Mono', monospace;
-}
 header {
     background-color: #1a1c29;
     color: #f8f4eb;
@@ -21,9 +18,13 @@ header {
     align-items: center;
 }
 .logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: #fdbc56;
+    height: 40px;
+    width: auto;
+}
+.logo-small {
+    height: 30px;
+    width: auto;
+    margin-bottom: 1rem;
 }
 nav ul {
     list-style: none;
@@ -44,30 +45,28 @@ nav a {
     text-decoration: none;
 }
 .hero {
-    background-color: #283583;
-    color: #f8f4eb;
-    text-align: center;
-    padding: 4rem 2rem;
-    position: relative;
-    background-image: url('../images/hero-hiihto.jpg');
+    background-image: url('../images/hero-hiihto.jpg'); /* Iso kuva tekstin taakse */
     background-size: cover;
     background-position: center;
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(40, 53, 131, 0.7); /* Tummenna kuvaa */
-    z-index: -1;
+.hero-overlay {
+    background-color: rgba(26, 28, 41, 0.6); /* Tummempi overlay sinisen sijaan layoutin mukaan */
+    padding: 2rem;
+    text-align: center;
+    color: #f8f4eb;
+    position: relative;
+    z-index: 2;
+    width: 100%;
 }
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    position: relative; /* Varmista näkyvyys overlayn päällä */
-    z-index: 1;
+    font-weight: 300; /* Light font layoutin mukaan */
 }
 .cta-buttons {
     display: flex;
@@ -75,8 +74,6 @@ nav a {
     gap: 1rem;
     margin: 2rem 0;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 1;
 }
 .btn {
     padding: 1rem 2rem;
@@ -98,7 +95,8 @@ nav a {
 }
 .search-section {
     padding: 2rem;
-    background-color: #f8f4eb;
+    background-color: #1a1c29;
+    color: #f8f4eb;
     text-align: center;
 }
 .search-bar {
@@ -107,6 +105,12 @@ nav a {
     padding: 1rem;
     border: 1px solid #e7b1e3;
     border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: #f8f4eb;
+    color: #1a1c29;
+}
+.search-section h3 {
+    color: #fdbc56;
     margin-bottom: 1rem;
 }
 .filters {
@@ -118,7 +122,8 @@ nav a {
 }
 .filter-item {
     padding: 0.5rem 1rem;
-    background-color: #e7b1e3;
+    background-color: #f8f4eb;
+    color: #1a1c29;
     border-radius: 5px;
 }
 .what-is-rendi {
@@ -126,64 +131,117 @@ nav a {
     background-color: #1a1c29;
     color: #f8f4eb;
 }
-.what-is-rendi h2 {
-    text-align: center;
-    margin-bottom: 2rem;
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    gap: 2rem;
+    align-items: center;
 }
-.description {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+.left-image {
+    flex: 0 0 200px;
+}
+.round-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.right-content h2 {
+    color: #e7b1e3; /* Vaaleanpunainen otsikko layoutin mukaan */
+    margin-bottom: 1rem;
+}
+.right-content p {
+    font-weight: 300;
 }
 .benefits {
     display: flex;
     justify-content: space-around;
     margin: 2rem 0;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 2rem auto;
 }
 .benefit {
     text-align: center;
     flex: 1;
     min-width: 150px;
 }
+.benefit-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-color: #f8f4eb;
+}
 .how-it-works {
     padding: 4rem 2rem;
     background-color: #f8f4eb;
+    color: #1a1c29;
+}
+.how-it-works h2 {
+    color: #fdbc56; /* Oranssi otsikko layoutin mukaan */
+    text-align: center;
+    margin-bottom: 2rem;
 }
 .how-it-works ol {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     padding-left: 1.5rem;
+    font-weight: 300;
 }
-.why-choose {
-    padding: 4rem 2rem;
-    background-color: #1a1c29;
-    color: #f8f4eb;
+.user-image-section {
+    text-align: right;
+    margin-bottom: 2rem;
 }
-.why-choose ul {
-    max-width: 800px;
-    margin: 0 auto;
-    padding-left: 1.5rem;
+.round-user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+    margin-left: 2rem;
 }
 .search-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    padding: 2rem;
+    padding: 2rem 0;
     max-width: 1200px;
     margin: 0 auto;
 }
 .search-item {
-    background-color: #f8f4eb;
+    background-color: #1a1c29;
     padding: 1rem;
     border-radius: 5px;
     text-align: center;
+    color: #f8f4eb;
 }
 .search-item img {
     width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 5px;
+}
+.cta-center {
+    text-align: center;
+    margin-top: 2rem;
+}
+.why-choose {
+    padding: 4rem 2rem;
+    background-color: #1a1c29;
+    color: #f8f4eb;
+}
+.why-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8f4eb;
+    color: #1a1c29;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.why-choose ul {
+    padding-left: 1.5rem;
 }
 .cta-section {
     padding: 4rem 2rem;
@@ -193,6 +251,11 @@ nav a {
 }
 .cta-section h2 {
     margin-bottom: 1rem;
+    font-weight: 300;
+}
+.cta-links p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
 }
 .social-proof {
     padding: 2rem;
@@ -201,6 +264,7 @@ nav a {
     border-left: 5px solid #fdbc56;
     max-width: 600px;
     margin: 2rem auto;
+    color: #1a1c29;
 }
 footer {
     background-color: #1a1c29;
@@ -220,6 +284,15 @@ footer {
     text-decoration: none;
 }
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .round-user-image {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
     .cta-buttons, .benefits, .filters, .footer-links {
         flex-direction: column;
         align-items: center;
@@ -230,5 +303,6 @@ footer {
     header {
         flex-direction: column;
         gap: 1rem;
+        padding: 1rem;
     }
 }
