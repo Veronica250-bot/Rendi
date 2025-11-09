@@ -45,7 +45,7 @@ nav a {
     text-decoration: none;
 }
 .hero {
-    background-image: url('../images/hero-hiihto.jpg'); /* Iso kuva tekstin taakse */
+    background-image: url('../images/kuva4.jpg'); /* Iso kuva lapsi hiihtämässä tekstin taakse, mockupin mukaisesti */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -55,7 +55,7 @@ nav a {
     justify-content: center;
 }
 .hero-overlay {
-    background-color: rgba(26, 28, 41, 0.6); /* Tummempi overlay sinisen sijaan layoutin mukaan */
+    background-color: rgba(26, 28, 41, 0.6); /* Tummempi overlay mockupin tumman taustan mukaan */
     padding: 2rem;
     text-align: center;
     color: #f8f4eb;
@@ -66,7 +66,7 @@ nav a {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-weight: 300; /* Light font layoutin mukaan */
+    font-weight: 300; /* Light font mockupin mukaan */
 }
 .cta-buttons {
     display: flex;
@@ -125,6 +125,17 @@ nav a {
     background-color: #f8f4eb;
     color: #1a1c29;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.filter-icon, .filter-icon-small {
+    width: 20px;
+    height: 20px;
+}
+.filter-icon-small {
+    width: 16px;
+    height: 16px;
 }
 .what-is-rendi {
     padding: 4rem 2rem;
@@ -148,7 +159,7 @@ nav a {
     object-fit: cover;
 }
 .right-content h2 {
-    color: #e7b1e3; /* Vaaleanpunainen otsikko layoutin mukaan */
+    color: #e7b1e3; /* Vaaleanpunainen otsikko mockupin mukaan */
     margin-bottom: 1rem;
 }
 .right-content p {
@@ -180,7 +191,7 @@ nav a {
     color: #1a1c29;
 }
 .how-it-works h2 {
-    color: #fdbc56; /* Oranssi otsikko layoutin mukaan */
+    color: #fdbc56; /* Oranssi otsikko mockupin mukaan */
     text-align: center;
     margin-bottom: 2rem;
 }
