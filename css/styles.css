@@ -43,7 +43,7 @@ nav a { color: #fff; text-decoration: none; font-weight: 700; }
 
  background: 
   linear-gradient(rgba(26, 28, 41, 0.6), rgba(26, 28, 41, 0.6)),
-  url('../images/kuva19.jpg') center/cover no-repeat;
+  url('/images/kuva19.jpg') center/cover no-repeat;
 
   display: flex;
   align-items: center;
