@@ -41,9 +41,9 @@ nav a { color: #fff; text-decoration: none; font-weight: 700; }
   position: relative;
   height: 70vh;
 
-  background: 
-    linear-gradient(rgba(26, 28, 41, 0.6), rgba(26, 28, 41, 0.6)),
-    url('images/Kuva19.jpg') center/cover no-repeat;
+ background: 
+  linear-gradient(rgba(26, 28, 41, 0.6), rgba(26, 28, 41, 0.6)),
+  url('../images/kuva19.jpg') center/cover no-repeat;
 
   display: flex;
   align-items: center;
@@ -128,7 +128,7 @@ nav a { color: #fff; text-decoration: none; font-weight: 700; }
   text-align: center;
 }
 /* Otsikko isommaksi */
-.how-it-works h3 {
+.how-it-works h2 {
   color: #fdbc56;
   margin-bottom: 1.5rem;
   font-size: 2.2rem; /* isompi otsikko */
