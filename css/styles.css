@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Mulish', sans-serif;
-    font-weight: 300; /* Light for body text */
+    font-weight: 300; /* Light for body */
     color: #1a1c29;
     background-color: #f8f4eb;
     line-height: 1.6;
@@ -21,6 +21,7 @@ header {
 .logo {
     height: 40px;
     width: auto;
+    font-family: 'SUSE Mono', monospace; /* Fallback if image fails */
 }
 .logo-small {
     height: 30px;
@@ -39,7 +40,7 @@ nav a {
     text-decoration: none;
 }
 .login {
-    background-color: #fdbc56;
+    background-color: #e7b1e3;
     color: #1a1c29;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -56,7 +57,7 @@ nav a {
     justify-content: center;
 }
 .hero-overlay {
-    background-color: rgba(26, 28, 41, 0.7); /* #1a1c29 overlay */
+    background-color: rgba(26, 28, 41, 0.6); /* Dark overlay */
     padding: 2rem;
     text-align: center;
     color: #f8f4eb;
@@ -123,13 +124,16 @@ nav a {
 .right-content p {
     font-weight: 300;
 }
+.benefits-section {
+    background-color: #f8f4eb;
+    padding: 2rem 0;
+}
 .benefits {
     display: flex;
     justify-content: space-around;
-    margin: 2rem 0;
-    flex-wrap: wrap;
+    margin: 0 auto;
     max-width: 1200px;
-    margin: 2rem auto;
+    flex-wrap: wrap;
 }
 .benefit {
     text-align: center;
@@ -141,12 +145,12 @@ nav a {
     height: 50px;
     border-radius: 50%;
     margin-bottom: 1rem;
-    background-color: #f8f4eb;
+    background-color: transparent; /* Line icons, no background */
 }
 .how-it-works {
     padding: 4rem 2rem;
-    background-color: #f8f4eb;
-    color: #1a1c29;
+    background-color: #1a1c29;
+    color: #f8f4eb;
 }
 .how-it-works h2 {
     color: #fdbc56;
@@ -171,38 +175,13 @@ nav a {
     float: right;
     margin-left: 2rem;
 }
-.search-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 2rem 0;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.search-item {
-    background-color: #1a1c29;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
-    color: #f8f4eb;
-}
-.search-item img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-.cta-center {
-    text-align: center;
-    margin-top: 2rem;
-}
-.search-section {
+.categories-section {
     padding: 2rem;
     background-color: #1a1c29;
     color: #f8f4eb;
     text-align: center;
 }
-.search-section h3 {
+.categories-section h3 {
     color: #fdbc56;
     margin-bottom: 1rem;
 }
@@ -216,18 +195,49 @@ nav a {
     background-color: #f8f4eb;
     color: #1a1c29;
 }
-.search-section .filters {
+.categories-section .filters {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
     flex-wrap: wrap;
 }
-.search-section .filter-item {
+.categories-section .filter-item {
     padding: 0.5rem 1rem;
     background-color: #e7b1e3;
     color: #1a1c29;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.filter-icon-small {
+    width: 16px;
+    height: 16px;
+}
+.search-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.search-item {
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: center;
+    color: #f8f4eb;
+}
+.search-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.search-item p {
+    margin-top: 0.5rem;
+    font-weight: 300;
 }
 .why-choose {
     padding: 4rem 2rem;
@@ -296,7 +306,7 @@ footer {
         margin: 0 auto;
         display: block;
     }
-    .cta-buttons, .benefits, .filters, .footer-links {
+    .cta-buttons, .benefits, .footer-links {
         flex-direction: column;
         align-items: center;
     }
@@ -307,5 +317,8 @@ footer {
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
+    }
+    .search-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
