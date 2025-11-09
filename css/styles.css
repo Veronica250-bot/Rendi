@@ -43,7 +43,7 @@ nav a { color: #fff; text-decoration: none; font-weight: 700; }
 
  background: 
   linear-gradient(rgba(26, 28, 41, 0.6), rgba(26, 28, 41, 0.6)),
-  url('../images/Kuva19.jpg') center/cover no-repeat;
+  url('/images/Kuva19.jpg') center/cover no-repeat;
 
   display: flex;
   align-items: center;
@@ -94,6 +94,14 @@ nav a { color: #fff; text-decoration: none; font-weight: 700; }
   color: #f8f4eb;
   padding: 4rem 2rem;
 }
+
+/* Otsikko isommaksi */
+.what-is-rendi h2 {
+  color: #fdbc56;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem; /* isompi otsikko */
+}
+
 .container {
   display: flex;
   align-items: center;
