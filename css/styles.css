@@ -41,15 +41,14 @@ nav a { color: #fff; text-decoration: none; font-weight: 700; }
   position: relative;
   height: 70vh;
 
- background: 
-  
+  background: 
   url('../Rendi/images/Kuva19.jpg') center/cover no-repeat;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #f8f4eb;
+  color: #1a1c29;
 }
 
 
