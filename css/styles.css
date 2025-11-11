@@ -42,6 +42,7 @@ nav a { color: #fff; text-decoration: none; font-weight: 700; }
   height: 70vh;
 
   background: 
+  linear-gradient(rgba(26, 28, 41, 0.6), rgba(26, 28, 41, 0.6)),
   url('../Rendi/images/Kuva19.jpg') center/cover no-repeat;
 
   display: flex;
